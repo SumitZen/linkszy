@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://linkszy.co/sitemap.xml
+Sitemap: https://linkszy.qzz.io/sitemap.xml

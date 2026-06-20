@@ -1,73 +1,78 @@
-# React + TypeScript + Vite
+# 🔗 Linkszy — Premium Link-in-Bio Tool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Linkszy is a state-of-the-art, beautifully designed link-in-bio tool for creators, designers, and developers. Built with modern web styling, premium Liquid Glass aesthetics, and robust animations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Liquid Glass Aesthetics:** Fully customizable design system with glassmorphic cards, gradients, and custom themes.
+- **Bento & Link Blocks:** Add social links, embedded music tracks, photo galleries, and products directly on your profile.
+- **Robust Analytics:** Track profile views and click stats in real-time.
+- **Instant Customization:** Live preview as you edit your theme, custom layout, background artwork, font family, and profile colors.
+- **Developer Friendly:** Completely typed in TypeScript, built with Vite, React 19, and Tailwind CSS.
+- **Appwrite Backend:** Secure backend integrations for profiles, database, and storage buckets.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend:** React 19, Vite, TypeScript, React Router Dom 7
+- **Styling:** Vanilla CSS, Tailwind CSS
+- **Animations:** GSAP (GreenSock Animation Platform)
+- **Backend:** Appwrite (Auth, Database, Storage)
+- **Smooth Scrolling:** Lenis Scroll
+- **Image Handling:** React Easy Crop
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clone & Install Dependencies
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Configure Environment Variables
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Create a `.env.local` file at the root of the project and add your Appwrite configuration:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```env
+VITE_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+VITE_APPWRITE_PROJECT=your_appwrite_project_id
+VITE_APPWRITE_DATABASE_ID=linkszy_db
+VITE_APPWRITE_PROFILE_COLLECTION_ID=profiles
+VITE_APPWRITE_STORAGE_BUCKET_ID=backgrounds
 ```
+
+*Note: If no environment variables are provided, the application will automatically fall back to LocalStorage simulation mode for testing.*
+
+### 3. Run Development Server
+
+```bash
+npm run dev
+```
+
+### 4. Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 📁 Project Structure
+
+- `src/components/`: Reusable components (e.g., Navbar, Footer, InfiniteTrack, BrutalistHero).
+- `src/context/`: Context providers handling auth state (`AuthContext.tsx`).
+- `src/lib/`: Config, themes, utility constants, and Appwrite client setup.
+- `src/pages/`: Page containers (e.g., Dashboard, LandingPage, PublicProfile, PricingPage).
+- `src/utils/`: General utilities and animations setup.
+- `public/`: Public assets including logo and sitemaps.
+
+---
+
+## 📝 License
+
+Distributed under the MIT License.

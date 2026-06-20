@@ -199,42 +199,42 @@ export default function LandingPage() {
                             <div className="platform-card__icon">📸</div>
                             <div className="platform-card__info">
                                 <div className="platform-card__name">Instagram</div>
-                                <div className="platform-card__action">Add to bio <span className="platform-card__url">linkszy.co/you</span></div>
+                                <div className="platform-card__action">Add to bio <span className="platform-card__url">linkszy.qzz.io/you</span></div>
                             </div>
                         </div>
                         <div className="platform-card">
                             <div className="platform-card__icon">🎵</div>
                             <div className="platform-card__info">
                                 <div className="platform-card__name">TikTok</div>
-                                <div className="platform-card__action">Add to bio <span className="platform-card__url">linkszy.co/you</span></div>
+                                <div className="platform-card__action">Add to bio <span className="platform-card__url">linkszy.qzz.io/you</span></div>
                             </div>
                         </div>
                         <div className="platform-card">
                             <div className="platform-card__icon">📺</div>
                             <div className="platform-card__info">
                                 <div className="platform-card__name">YouTube</div>
-                                <div className="platform-card__action">Add to about <span className="platform-card__url">linkszy.co/you</span></div>
+                                <div className="platform-card__action">Add to about <span className="platform-card__url">linkszy.qzz.io/you</span></div>
                             </div>
                         </div>
                         <div className="platform-card">
                             <div className="platform-card__icon">𝕏</div>
                             <div className="platform-card__info">
                                 <div className="platform-card__name">Twitter / X</div>
-                                <div className="platform-card__action">Add to bio <span className="platform-card__url">linkszy.co/you</span></div>
+                                <div className="platform-card__action">Add to bio <span className="platform-card__url">linkszy.qzz.io/you</span></div>
                             </div>
                         </div>
                         <div className="platform-card">
                             <div className="platform-card__icon">💼</div>
                             <div className="platform-card__info">
                                 <div className="platform-card__name">LinkedIn</div>
-                                <div className="platform-card__action">Add to profile <span className="platform-card__url">linkszy.co/you</span></div>
+                                <div className="platform-card__action">Add to profile <span className="platform-card__url">linkszy.qzz.io/you</span></div>
                             </div>
                         </div>
                         <div className="platform-card">
                             <div className="platform-card__icon">📧</div>
                             <div className="platform-card__info">
                                 <div className="platform-card__name">Email</div>
-                                <div className="platform-card__action">Add to signature <span className="platform-card__url">linkszy.co/you</span></div>
+                                <div className="platform-card__action">Add to signature <span className="platform-card__url">linkszy.qzz.io/you</span></div>
                             </div>
                         </div>
                     </div>
